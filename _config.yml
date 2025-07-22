@@ -72,7 +72,6 @@ colors: # this is the basic theme
   background: "#fafafa"
   light_background: "#eeeeee"
 
-
 # A few examples. 
 basic theme:
   text: "#1a1c20"
