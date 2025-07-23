@@ -13,14 +13,13 @@ title: Param Ghetia's Portfolio # This is what shows up in the tab of the browse
 
 # Hero Section
 name: Param Ghetia
-headline: Electrical Engineering Student at Rutgers, interested in Analog Electronics and Sustainable Power Solutions
+headline: Electrical Engineering Student at Rutgers University
 description: >- # dont remove this line. this will ignore all new lines until the next section
-Hello! I’m an Electrical Engineering student at Rutgers University interested in analog electronics, circuit design, and sustainable power systems. My long-term goal is to contribute to the fields of renewable energy and advanced electronic systems.
+Hello! I’m an Electrical Engineering student at Rutgers University with interests in analog & digital electronics, circuit design, and sustainable power systems. My long-term goal is to contribute to renewable energy technologies and advanced electronic systems.
 
-In addition to coursework, I explore electronics and circuit projects in my free time, gaining hands-on experience with tools such as Blender, Fusion 360, SolidWorks, and KiCad. As an Eagle Scout, I’ve developed strong leadership, project management, and problem-solving skills that I bring to every challenge.
+Outside of coursework, I enjoy working on electronics and circuit projects, gaining hands-on experience with tools such as Blender, Fusion 360, SolidWorks, and KiCad. As an Eagle Scout, I’ve developed strong leadership, project management, and problem-solving skills that I apply to both academic and personal projects.
 
 Thank you for visiting my portfolio!
-
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/LinkedInPFPCroppedBackground.png
