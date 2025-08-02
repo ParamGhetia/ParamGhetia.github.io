@@ -9,7 +9,7 @@ skills:
   - PCB analysis
   - audio system design
 
-main-image: /mpschematic.webp
+main-image: /3269-04.jpg
 ---
 
 # This is another demo
