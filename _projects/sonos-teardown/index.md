@@ -39,8 +39,10 @@ main-image: /3269-04.jpg
 # Specifications
 ## Microcontroller
 - ESP32-WROOM Module – Dual-core Wi-Fi + Bluetooth SoC with GPIO, SPI, I²C
+
 ## Audio System
 - VS1053B MP3 Audio Decoder – Supports MP3, WAV, OGG playback; SPI interface
+  
 ## Power Management
 - TP4056 Li-ion Charger Module (with USB-C input)
 - Charging from USB-C VBUS (5 V)
@@ -51,14 +53,18 @@ main-image: /3269-04.jpg
 - Output: 3.3 V regulated for ESP32 and peripherals
 - 3.7 V Li-ion Battery
 - TP4056 BAT pin
+  
 ## Storage
 - MicroSD Card Reader Module (ADA254)
+  
 ## Display
 - 1.5-inch Waveshare RGB OLED (128×128)
+  
 ## User Input
 - Rotary Encoder Module (SW MEC 5E) – For menu navigation and selection
 - 2× 90° Tactile Switches – Side buttons for extra controls
 - DS Joystick Module (KY-023) – Analog directional input
+  
 ## Misc.
 - ESD7104 ESD Protection Diode Array
 - Various Resistors
