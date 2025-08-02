@@ -46,7 +46,6 @@ TP4056 Li-ion Charger Module (with USB-C input)
 Charging from USB-C VBUS (5 V)
 Integrated charge status LEDs (CHRG/STDBY)
 CE and TEMP pins configured for always-on charging
-5.1 kΩ Resistor – Pull-down on USB-C CC pin for sink device signaling
 MP1584 Buck Converter
 Input: 3.0–4.2 V (from battery)
 Output: 3.3 V regulated for ESP32 and peripherals
@@ -61,5 +60,48 @@ Rotary Encoder Module (SW MEC 5E) – For menu navigation and selection
 2× 90° Tactile Switches – Side buttons for extra controls
 DS Joystick Module (KY-023) – Analog directional input
 ## Misc.
-1 µF ceramic (TP4056 VCC)
-10 µF electrolytic (TP4056 BAT)
+ESD7104 ESD Protection Diode Array
+Various Resistors
+Various Capacitors
+
+# Initial Design Requirements
+The following requirements were established at the start of the project to guide the schematic and system design for a fully functional, portable MP3 player:
+
+## Core Functionality
+1. Must use the ESP32-WROOM microcontroller for audio control, UI handling, and storage access.
+2. Must decode and play standard MP3 (and optionally WAV/OGG) audio files using a dedicated decoder.
+3. Must provide audio output via a 3.5 mm headphone jack.
+
+## Storage
+1. Must store audio files on a microSD card using the SPI interface.
+2. The SD module must be directly accessible by the ESP32.
+
+## Power
+1. Must be battery-powered via a rechargeable 3.7 V Li-ion cell.
+2. Must support USB-C charging using a charger module.
+3. Must provide stable, regulated power to ESP32 and peripherals using a buck converter.
+4. Must implement basic USB-C compliance using a 5.1 kΩ pull-down resistor on CC pin.
+5. Must include some kind of capacitor filtering and basic ESD protection.
+
+## Display & UI
+1. Must include a color OLED display for UI and song display.
+2. Must provide intuitive physical control inputs:
+3. Rotary encoder for navigation
+4. Joystick for menu control
+5. Ideally, multiple tactile buttons for playback control and power
+
+## Connectors
+1. Must include a JST connector for safe battery connection.
+2. Must have USB-C power input and headphone output.
+
+## Protection & Stability
+1. Must include ESD protection on USB and sensitive IO lines.
+2. Must use decoupling capacitors near key ICs and power rails.
+3. Must ensure clean power delivery and minimal noise for audio playback.
+
+## Form Factor
+1. Should be compact and modular enough to support:
+   - Custom PCB layout
+   - 3D-printed enclosure design
+   - Should expose debug or programming headers (optional but preferred)
+
